@@ -541,13 +541,6 @@
 					console.log('\n\nScript Data:\n', capturedScript)
 					console.groupEnd()
 				}
-				const message = (confirmPermission, [url, session, reads]) => {
-					return '🤮 Fingerprinting detected!'
-					+ (confirmPermission ? ' OK to allow or Cancel to abort\n' : '\n')
-					+ '🛡 ' + session + '\n'
-					+ '💩 Creepy script: ' + url + '\n'
-					+ '🧐\n' + reads + '\n...' + '\n'
-				}
 				if ((creeps && !creeps[url]) || !sessionPermission) {
 					let permission = null
 					const creepyOrigin = sessionStorage.getItem(sessionName + 'creepyOrigin')
