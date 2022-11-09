@@ -20,10 +20,6 @@
 		// https://www.primegrid.com/gpu_list.php
 		const webglRenderer = () => {
 			const macRenderers = [{
-				gpu: 'AMD Radeon',
-				model: `20${listRand(['HD 7950', 'Pro 580', 'RX 570', 'RX Vega 56'])} Compute Engine`
-			},
-			{
 				gpu: 'NVIDIA GeForce GTX',
 				model: listRand(['675MX', '680'])
 			}
@@ -35,10 +31,6 @@
 			{
 				gpu: 'NVIDIA GeForce GTX',
 				model: `10${listRand([5, 6, 7, 8])}0${listRand(['', ' Ti'])}`
-			},
-			{
-				gpu: 'Radeon',
-				model: `RX ${listRand([560, 570, 580])} Series`
 			}
 			]
 			const randomRenderer = (
